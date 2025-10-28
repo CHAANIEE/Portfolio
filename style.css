@@ -1,0 +1,248 @@
+/* ===== GENERAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+    background-color: #f5f5dc; /* Beige background */
+    color: #013220; /* Dark green text */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background-color: #013220; /* Dark green */
+    color: #f5f5dc; /* Beige text */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* LOGO LEFT */
+/* LOGO LEFT */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05); /* smooth zoom effect */
+  }
+  
+  /* CL BOX */
+  .logo-icon {
+    background: linear-gradient(135deg, #013220, #025c34);
+    color: #f5f5dc;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(1, 50, 32, 0.4); /* soft green glow */
+    transition: all 0.3s ease;
+  }
+  
+  .logo:hover .logo-icon {
+    box-shadow: 0 0 14px rgba(1, 50, 32, 0.7);
+  }
+  
+  /* CHRISTIAN TEXT */
+  .logo-name {
+    letter-spacing: 1.2px;
+    color: #f5f5dc;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* soft shadow for depth */
+    font-weight: 700;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .logo:hover .logo-name {
+    color: #d4c99e; /* warm beige tint on hover */
+    text-shadow: 0 3px 8px rgba(1, 50, 32, 0.5);
+  }
+  
+  /* NAV BUTTONS RIGHT */
+  .nav-right {
+    display: flex;
+    gap: 1.2rem;
+  }
+  
+  .nav-right button {
+    background: transparent;
+    border: 2px solid #f5f5dc;  /* beige border */
+    color: #f5f5dc;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 6px rgba(245, 245, 220, 0.3); /* subtle glow */
+  }
+  
+  .nav-right button:hover,
+  .nav-right button.active {
+    background-color: #f5f5dc;
+    color: #013220;
+    border: 2px solid #f5f5dc;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(245, 245, 220, 0.6); /* brighter glow */
+  }
+  
+  
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 6rem 10%;
+    min-height: 90vh;
+    gap: 4rem;
+    box-sizing: border-box;
+  }
+  
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    text-align: left; 
+    margin-left: -200px;
+  }
+  
+  .hero-left h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.2;
+    color: #013220;
+  }
+  
+  .hero-left h1 {
+    font-size: 2.2rem; /* smaller than 3.2rem */
+    margin-bottom: 0.6rem;
+    line-height: 1.2;
+    color: #013220;
+  }
+  
+  .hero-left p {
+    font-size: 1rem; /* smaller than 1.4rem */
+    margin: 1rem 0 2rem;
+    color: #2e2e2e;
+  }
+  
+  /* ABOUT BUTTON */
+  .about-btn {
+    background: transparent;
+    color: #013220;
+    border: 2px solid #013220;
+    padding: 0.9rem 2.4rem;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 6px rgba(1, 50, 32, 0.3); /* subtle dark-green glow */
+  }
+  
+  .about-btn:hover {
+    background: #013220;
+    color: #f5f5dc;
+    border-color: #013220;
+    transform: scale(1.08);
+    box-shadow: 0 0 10px rgba(1, 50, 32, 0.5);
+  }
+  
+  .about-btn:hover {
+    background: #f5f5dc;
+    color: #013220;
+    transform: scale(1.08);
+    border: 2px solid #013220;
+  }
+  
+  /* SOCIAL ICONS */
+  .socials {
+    margin-top: 2rem;
+  }
+  
+  .socials a {
+    color: #013220;
+    font-size: 2rem;
+    margin-right: 1.4rem;
+    transition: 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #025c34;
+    transform: scale(1.2);
+  }
+  
+  /* RIGHT SIDE (IMAGE) */
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* moves image upward */
+    margin-top: -120px; /* fine-tune how high you want it */
+  }
+  
+  .profile-pic {
+    width: 420px;  /* increased from 320px */
+    height: 420px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    border: 6px solid #013220;
+  }
+  
+  /* ===== SECTIONS ===== */
+  section {
+    width: 100%;
+    padding: 3rem 10%;
+    background: #f5f5dc;
+  }
+  
+  section h2 {
+    color: #013220;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center;
+    background-color: #013220;
+    color: #f5f5dc;
+    padding: 1.4rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+/* Keep your previous CSS, then add this at the bottom */
+
+/* Hide inactive sections */
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .content-section.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Make sure the page layout stays clean */
+  section {
+    min-height: 80vh;
+  }
+    
